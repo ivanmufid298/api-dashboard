@@ -1,0 +1,22 @@
+nav {
+    background-color: rgb(20, 163, 139);
+   
+}
+
+.mr-auto {
+    float: right;
+}
+
+.search {
+    border-radius: 15px;
+}
+
+.nav-items {
+    max-width: 1700px;
+    width: 1700px;
+    padding: 10px;
+}
+
+a {
+    color: white;
+}
