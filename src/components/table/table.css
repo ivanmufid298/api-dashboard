@@ -1,0 +1,19 @@
+table {
+    margin: auto;
+}
+
+thead {
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+tbody {
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.delete {
+    background-color: rgb(252, 215, 231);
+    border-radius: 20px;
+    font-size: small;
+    color: rgb(226, 0, 98);
+}
+
