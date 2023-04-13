@@ -1,0 +1,27 @@
+.container-tab {
+    margin: o auto;
+    width: 400px;
+}
+
+.tab {
+    display: flex;
+    border-bottom: gray;
+}
+
+.tabs button {
+    cursor: pointer;  
+    padding: 30px;
+    border: none;
+    color: gray;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border-bottom: 3px solid gainsboro;
+}
+
+.tabs button:disabled {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid rgb(20, 163, 139);
+    color: black;
+    font-weight: bold;
+}

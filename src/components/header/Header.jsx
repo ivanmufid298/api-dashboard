@@ -3,13 +3,13 @@ import "./header.css"
 import { Icon } from '@iconify/react'
 
 const Header = () => {
-    const image = require ('../../img/food.png')
+    // const image = require ('../../img/food.png')
 
   return (
     <div className="container header  mt-5">
             <div className='row'>
         <div className="col-2">
-            <img className='logo' src={image} alt="" />
+            <img className='logo' src="https://cdn.shopify.com/s/files/1/0066/7569/3639/articles/how-to-eat-healthy.jpg?v=1611987977" alt="" />
         </div>
         <div className="col-4">
             <h4 style={{fontWeight: 'bold'}}>Healthy Salad</h4>

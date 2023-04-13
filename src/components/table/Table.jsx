@@ -1,14 +1,16 @@
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import "./table.css"
 import axios from 'axios';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import Skeleton from 'react-loading-skeleton';
 
 const client = axios.create({
-	baseURL: 'https://jsonplaceholder.typicode.com/users',
+    baseURL: 'https://jsonplaceholder.typicode.com/users',
 });
 
 const Table = () => {
-
+    
+    const [isLoading, setIsLoading] = useState(true);
     // Deklarasi variabel state
 	const [id, setId] = useState('');
 	const [name, setName] = useState('');
@@ -27,6 +29,7 @@ const Table = () => {
 			}
 		};
 		fetchUser();
+        setIsLoading(false);
 	}, []);
 
     
@@ -70,10 +73,9 @@ const Table = () => {
 	};
 
 	return (
-    <SkeletonTheme baseColor="#202020" highlightColor="#444">
       		<div>
-          <Skeleton count={3} />
             <div className="container container-table">
+            {isLoading && <p>Loading...</p>}
                 <table className='table table-borderless'>
                     <thead className='text-center'>
                         <tr>
@@ -88,10 +90,10 @@ const Table = () => {
                         {users.map((user) => {
                             return (
                                 <tr key={user.id}>
-                                    <td>{user.id}</td>
-                                    <td>{user.name}</td>
-                                    <td>{user.email}</td>
-                                    <td>{user.website}</td>
+                                    <td>{user.id }</td>
+                                    <td>{user.name }</td>
+                                    <td>{user.email }</td>
+                                    <td>{user.website }</td>
                                     <td>
                                         <button className='btn btn-block delete' onClick={() => deleteUser(user.id)}>Delete</button>
                                     </td>
@@ -142,7 +144,6 @@ const Table = () => {
             </div>
             
 		</div>
-    </SkeletonTheme>
 	);
 };
 

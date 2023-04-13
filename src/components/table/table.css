@@ -17,3 +17,7 @@ tbody {
     color: rgb(226, 0, 98);
 }
 
+.table tr:hover {
+    background-color: whitesmoke;
+}
+

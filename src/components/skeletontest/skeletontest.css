@@ -1,0 +1,77 @@
+.skeleton-test {
+    text-align: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.order-title {
+    font-size: 1em;
+    color: gray;
+}
+
+.distance {
+    color: rgb(190, 190, 190);
+}
+
+.prize {
+    color: rgb(190, 190, 190);
+}
+
+.photo {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.name {
+    margin: 1rem 0;
+}
+
+.email {
+    margin: 1rem 0;
+}
+
+table {
+    margin: auto;
+}
+
+thead {
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+tbody {
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.cancel {
+    background-color: rgb(252, 215, 231);
+    border-radius: 20px;
+    font-size: small;
+    color: rgb(226, 0, 98);
+    height: 30px;
+    font-weight: bold;
+}
+
+.table tr:hover {
+    background-color: whitesmoke;
+}
+
+.completed {
+    background-color: rgb(162, 212, 189);
+    border-radius: 20px;
+    font-size: small;
+    color: rgb(42, 154, 89);
+    height: 30px;
+    font-weight: bold;
+}
+
+.delivering {
+    background-color: rgb(192, 223, 255);
+    border-radius: 20px;
+    font-size: small;
+    color: rgb(55, 175, 255);
+    height: 30px;
+    font-weight: bold;  
+}
+
+

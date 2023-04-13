@@ -1,0 +1,27 @@
+.container-item {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .container-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .box-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .text2 {
+    color: gainsboro;
+  }

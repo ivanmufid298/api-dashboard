@@ -1,8 +1,11 @@
 import React from 'react'
 import Sidebar from '../sidebar/Sidebar'
-import Table from '../table/Table'
+// import Table from '../table/Table'
 import './content.css'
 import { Icon } from '@iconify/react'
+import DetailOrder from '../detailorder/DetailOrder'
+// import BasicFilterDemo from '../basicfilterdemo/BasicFilterDemo'
+import SkeletonTest from '../skeletontest/SkeletonTest'
 
 const Content = () => {
   return (
@@ -15,9 +18,13 @@ const Content = () => {
               <div className="col-2 text-center"><button className="btn btn-outline-dark filter-text">
               <Icon icon="streamline:interface-setting-slider-horizontal-adjustment-adjust-controls-fader-horizontal-settings-slider" className='mr-2' color="gray" />Filter Order</button></div>
               </div>
-              <Table />
+              {/* <Table /> */}
+              {/* <BasicFilterDemo /> */}
+              <SkeletonTest />
             </div>
-            <div className="col-3" style={{backgroundColor: 'whitesmoke'}}></div>
+            <div className="col-3" style={{backgroundColor: 'whitesmoke'}}>
+            <DetailOrder />
+            </div>
         </div>
     </div>
   )
